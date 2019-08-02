@@ -16,9 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
    xinv <- NULL
    set <- function(y) {
-      x <<- y   ## changing the value of x, which is the matrix
-                ## from the parental environment function makeCachMatrix,
-                ## so we need <<- in order to change the value of 
+      x <<- y   ## changing the value of x, which is the matrix (in fact, the list)
+                ## from the parental environment function makeCachMatrix.
+                ## So, we need <<- in order to change the value of 
                 ## variable 'x' (which is NOT within the environment
                 ## of set function)
                 
